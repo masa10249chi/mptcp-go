@@ -9,7 +9,7 @@ Golang based Multipath TCP v0 tunneling works on Docker.
 ```bash
 git clone https://github.com/masa10249chi/mptcp-go.git
 cd mptcp-go
-docker build -t mptcp-go-exp .
+docker build -t mptcp-go .
 ```
 
 # Usage
@@ -22,5 +22,5 @@ docker run -it --name mptcp-go-client --privileged mptcp-go \
 Server side:
 ```bash
 docker run -it --name mptcp-go-server --privileged mptcp-go \
-           /go/bin/server_mptcp-tunneling -server_ip xx.xx.xx.xx -server_port xxxx \
+           /go/bin/server_mptcp-tunneling -server_ip xx.xx.xx.xx -server_port xxxx
 ```
